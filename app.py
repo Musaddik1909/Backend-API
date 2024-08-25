@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 # Initialize the Flask application
 app = Flask(__name__)
+CORS(app)
 
 # Static user details (replace with actual user details, we could retrieve the data from a database)
 USER_ID = "john_doe_17091999"  # This will be used as a unique identifier for the user
